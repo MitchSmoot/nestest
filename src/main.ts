@@ -13,7 +13,8 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle('Nestest')
     .setDescription('The Nestest API description')
-    .setVersion('0.1')
+    .setVersion('0.1.1')
+    .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
